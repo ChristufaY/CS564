@@ -1,0 +1,49 @@
+<h1>Update Team Form</h1>
+<h2>Enter Values into the Fields Which You Would Like to Update!</h2>
+
+<form action="update_team/" method="post">
+    {% csrf_token %}
+
+    New Min Year:<br>
+    <input name="min_year" , value="{{ x.min_year }}">
+    <br><br>
+    New Max Year:<br>
+    <input name="max_year" , value="{{ x.max_year }}">
+    <br><br>
+    New Abbreviation:<br>
+    <input name="abbreviation" , value="{{ x.abbreviation }}">
+    <br><br>
+    New Nickname:<br>
+    <input name="nickname" , value="{{ x.nickname }}">
+    <br><br>
+    New Year Founded:<br>
+    <input name="year_founded" , value="{{ x.year_founded }}">
+    <br><br>
+    New City:<br>
+    <input name="city" , value="{{ x.city }}">
+    <br><br>
+    New Arena Name:<br>
+    <input name="arena_name" , value="{{ x.arena_name }}">
+    <br><br>
+    New Arena Capacity:<br>
+    <input name="arena_cap" , value="{{ x.arena_cap }}">
+    <br><br>
+    New Owner:<br>
+    <input name="owner" , value="{{ x.owner }}">
+    <br><br>
+    New General Manager:<br>
+    <input name="general_manager" , value="{{ x.general_manager }}">
+    <br><br>
+    New Head Coach:<br>
+    <input name="head_coach" , value="{{ x.head_coach }}">
+    <br><br>
+    New D League Affiliation:<br>
+    <input name="d_league_affiliation" , value="{{ x.d_league_affiliation }}">
+    <br><br>
+    <input name="team_id" , value="{{ x.team_id }}" , type="hidden">
+
+    <input type="submit" value="Submit">
+    <a href="/">
+        <button>Back to Home</button>
+    </a>
+</form>

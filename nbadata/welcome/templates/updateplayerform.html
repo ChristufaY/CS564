@@ -1,0 +1,25 @@
+<h1>Update Player Form</h1>
+<h2>Enter Values into the Fields Which You Would Like to Update!</h2>
+
+<form action="update_player/" method="post">
+    {% csrf_token %}
+
+    Player's New Name(First Last):<br>
+    <input name="player_name" value="{{ x.player_name }}">
+    <br><br>
+    New Team ID:<br>
+    <input name="team_id" , value="{{ x.team_id }}">
+    <br><br>
+    New Player ID(Can't be one that already exists):<br>
+    <input name="player_id" , value="{{ x.player_id }}">
+    <br><br>
+    New Season:<br>
+    <input name="season" , value="{{ x.season }}">
+    <br><br>
+    <input name="id" , value="{{ x.id }}" , type="hidden">
+
+    <input type="submit" value="Submit">
+    <a href="/">
+        <button>Back to Home</button>
+    </a>
+</form>

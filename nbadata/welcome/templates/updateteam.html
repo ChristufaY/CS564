@@ -1,0 +1,45 @@
+<h1>Update Team</h1>
+
+<a href="/">
+    <button>Back to Home</button>
+</a>
+
+<table border="1">
+    <tr>
+        <th>Team ID</th>
+        <th>Min Year</th>
+        <th>Max Year</th>
+        <th>Abbreviation</th>
+        <th>Nickname</th>
+        <th>Year Founded</th>
+        <th>City</th>
+        <th>Arena Name</th>
+        <th>Arena Capacity</th>
+        <th>Owner</th>
+        <th>General manager</th>
+        <th>Head Coach</th>
+        <th>D League Affiliation</th>
+
+    </tr>
+    {% for x in myteams %}
+    <tr>
+        <td>{{ x.team_id }}</td>
+        <td>{{ x.min_year }}</td>
+        <td>{{ x.max_year }}</td>
+        <td>{{ x.abreviation }}</td>
+        <td>{{ x.nickname }}</td>
+        <td>{{ x.year_founded }}</td>
+        <td>{{ x.city }}</td>
+        <td>{{ x.arena_name }}</td>
+        <td>{{ x.arena_cap }}</td>
+        <td>{{ x.owner }}</td>
+        <td>{{ x.general_manager }}</td>
+        <td>{{ x.head_coach }}</td>
+        <td><a href="update_team_form/{{ x.team_id }}">delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="/">
+    <button>Back to Home</button>
+</a>

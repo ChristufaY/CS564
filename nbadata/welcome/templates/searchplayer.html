@@ -1,0 +1,14 @@
+<h1>Search for a Player</h1>
+<h2>Enter Lastname of the Player</h2>
+
+<form action="search_player/" method="post">
+    {% csrf_token %}
+    Player Lastname:<br>
+    <input name="lastname">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<a href="/">
+    <button>Back to Home</button>
+</a>

@@ -1,0 +1,96 @@
+<h1>Add Game Detail</h1>
+
+<form action="add_game_detail/" method="post">
+{% csrf_token %}
+Game ID:<br>
+<input game_id="game_id">
+<br><br>
+Team ID:<br>
+<input team_id="team_id">
+<br><br>
+Abbreviation:<br>
+<input abbreviation="abbreviation">
+<br><br>
+city:<br>
+<input city="city">
+<br><br>
+Player ID:<br>
+<input player_id="player_id">
+<br><br>
+Player Name:<br>
+<input player_name="player_name">
+<br><br>
+Nickname(Player's nickname):<br>
+<input nickname="nickname">
+<br><br>
+Start Position(PG/G/F/PF/C Leave empty if player did not start):<br>
+<input start_position="start_position">
+<br><br>
+Comment(Ex. DNP - Coach's Decision):<br>
+<input comment="comment">
+<br><br>
+Minutes Played:<br>
+<input minutes="minutes">
+<br><br>
+FG Made:<br>
+<input fgm="fgm">
+<br><br>
+FG Attempted:<br>
+<input fga="fga">
+<br><br>
+FG%:<br>
+<input fg_pct="fg_pct">
+<br><br>
+3 Pointers Made:<br>
+<input fg3m="fg3m">
+<br><br>
+3 Pointers Attempted:<br>
+<input fg3a="fg3a">
+<br><br>
+3 Pointer %:<br>
+<input fg3_pct="fg3_pct">
+<br><br>
+FT Made:<br>
+<input ftm="ftm">
+<br><br>
+FT Attempted:<br>
+<input fta="fta">
+<br><br>
+FT%:<br>
+<input ft_pct="ft_pct">
+<br><br>
+Offensive Rebounds:<br>
+<input o_reb="o_reb">
+<br><br>
+Defensive Rebounds:<br>
+<input d_reb="d_reb">
+<br><br>
+Rebounds:<br>
+<input reb="reb">
+<br><br>
+Assists:<br>
+<input ast="ast">
+<br><br>
+Steals:<br>
+<input stl="stl">
+<br><br>
+Blocks:<br>
+<input blk="blk">
+<br><br>
+Turnovers:<br>
+<input turnovers="turnovers">
+<br><br>
+Personal Fouls:<br>
+<input pf="pf">
+<br><br>
+Points:<br>
+<input pts="pts">
+<br><br>
+Efficiency(+/-)(Ex. -1.0):<br>
+<input oplus_minus="plus_minus">
+<br><br>
+<input type="submit" value="Submit">
+<a href="/">
+    <button>Back to Home</button>
+</a>
+</form>

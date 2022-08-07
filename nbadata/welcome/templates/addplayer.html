@@ -1,0 +1,22 @@
+<h1>Add Player</h1>
+<h2>Note: If Fields Are Left Empty or a Player with Duplicate Keys is Created, Player Will Not Be Added and You Will be Redirected to the Welcome Page!</h2>
+
+<form action="add_player/" method="post">
+{% csrf_token %}
+Player Name(First Last):<br>
+<input name="player_name">
+<br><br>
+Team ID:<br>
+<input name="team_id">
+<br><br>
+Player ID:<br>
+<input name="player_id">
+<br><br>
+Season:<br>
+<input name="season">
+<br><br>
+<input type="submit" value="Submit">
+<a href="/">
+    <button>Back to Home</button>
+</a>
+</form>

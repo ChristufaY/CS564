@@ -1,0 +1,28 @@
+<h1>Players</h1>
+
+<a href="/">
+    <button>Back to Home</button>
+</a>
+
+<table border="1">
+    <tr>
+        <th>Player Name</th>
+        <th>Team ID</th>
+        <th>Player ID</th>
+        <th>Season</th>
+        <th>ID</th>
+    </tr>
+    {% for x in myplayers %}
+    <tr>
+        <td>{{ x.player_name }}</td>
+        <td>{{ x.team_id }}</td>
+        <td>{{ x.player_id }}</td>
+        <td>{{ x.season }}</td>
+        <td>{{ x.id }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="/">
+    <button>Back to Home</button>
+</a>

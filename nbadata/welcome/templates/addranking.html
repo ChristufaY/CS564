@@ -1,0 +1,48 @@
+<h1>Add Ranking</h1>
+
+<form action="add_ranking/" method="post">
+{% csrf_token %}
+Team ID:<br>
+<input team_id="team_id">
+<br><br>
+League ID:<br>
+<input league_id="league_id">
+<br><br>
+Season ID:<br>
+<input sesaon_id="season_id">
+<br><br>
+Standings Date:<br>
+<input standings_date="standings_date">
+<br><br>
+Conference(East or West):<br>
+<input conference="conference">
+<br><br>
+Team Name:<br>
+<input team_name="team_name">
+<br><br>
+Games Played:<br>
+<input games="games">
+<br><br>
+Win(s):<br>
+<input win="win">
+<br><br>
+Loss(es):<br>
+<input loss="loss">
+<br><br>
+Win %:<br>
+<input win_pct="win_pct">
+<br><br>
+Home Record(W-L):<br>
+<input home_record="home_record">
+<br><br>
+Road Record(W-L):<br>
+<input road_record="road_record">
+<br><br>
+Return To Play:<br>
+<input return_to_play="return_to_play">
+<br><br>
+<input type="submit" value="Submit">
+<a href="/">
+    <button>Back to Home</button>
+</a>
+</form>

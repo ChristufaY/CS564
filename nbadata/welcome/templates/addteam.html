@@ -1,0 +1,49 @@
+<h1>Add Team</h1>
+<h2>Note: If Fields Are Left Empty or a Team with Duplicate Keys is Created, Team Will Not Be Added and You Will be Redirected to the Welcome Page!</h2>
+
+<form action="add_team/" method="post">
+{% csrf_token %}
+Team ID:<br>
+<input name="team_id">
+<br><br>
+Min Year(Year of first game):<br>
+<input name="min_year">
+<br><br>
+Max Year(Year of most recent game):<br>
+<input name="max_year">
+<br><br>
+Abbreviation:<br>
+<input name="abbreviation">
+<br><br>
+Nickname:<br>
+<input name="nickname">
+<br><br>
+Year Founded:<br>
+<input name="year_founded">
+<br><br>
+City:<br>
+<input name="city">
+<br><br>
+Arena Name:<br>
+<input name="arena_name">
+<br><br>
+Arena Capacity:<br>
+<input name="arena_cap">
+<br><br>
+Owner(First Last):<br>
+<input name="owner">
+<br><br>
+General Manager(First Last):<br>
+<input name="general_manager">
+<br><br>
+Head Coach(First Last):<br>
+<input name="head_coach">
+<br><br>
+D League Affiliation(D League Team Name):<br>
+<input name="d_league_affiliation">
+<br><br>
+<input type="submit" value="Submit">
+<a href="/">
+    <button>Back to Home</button>
+</a>
+</form>

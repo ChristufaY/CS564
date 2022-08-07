@@ -1,0 +1,72 @@
+<h1>Add Game</h1>
+
+<form action="add_game/" method="post">
+{% csrf_token %}
+Game Date(YYYY-MM-DD):<br>
+<input game_date="game_date">
+<br><br>
+Game ID:<br>
+<input game_id="game_id">
+<br><br>
+Game Status(Final or INP):<br>
+<input game_status="game_status">
+<br><br>
+Home Team ID:<br>
+<input home_team_id="home_team_id">
+<br><br>
+Visitor Team ID:<br>
+<input visitor_team_id="visitor_team_id">
+<br><br>
+Season:<br>
+<input season="season">
+<br><br>
+Team ID Home:<br>
+<input team_id_home="team_id_home">
+<br><br>
+PTS Home:<br>
+<input pts_home="pts_home">
+<br><br>
+FG% Home:<br>
+<input fg_pct_home="fg_pct_home">
+<br><br>
+FT% Home:<br>
+<input ft_pct_home="ft_pct_home">
+<br><br>
+FG3% Home:<br>
+<input fg3_pct_home="fg3_pct_home">
+<br><br>
+AST Home:<br>
+<input ast_home="ast_home">
+<br><br>
+REB Home:<br>
+<input reb_home="reb_home">
+<br><br>
+Team ID Away:<br>
+<input team_id_away="team_id_away">
+<br><br>
+PTS Away:<br>
+<input pts_away="pts_away">
+<br><br>
+FG% Away:<br>
+<input fg_pct_away="fg_pct_away">
+<br><br>
+FT% Away:<br>
+<input ft_pct_away="ft_pct_away">
+<br><br>
+FG3% Away:<br>
+<input fg3_pct_away="fg3_pct_away">
+<br><br>
+AST Away:<br>
+<input ast_away="ast_away">
+<br><br>
+REB Away:<br>
+<input reb_away="reb_away">
+<br><br>
+Home Team Wins(1 if home team won; 0 if home team lost):<br>
+<input home_team_wins="home_team_wins">
+<br><br>
+<input type="submit" value="Submit">
+<a href="/">
+    <button>Back to Home</button>
+</a>
+</form>
